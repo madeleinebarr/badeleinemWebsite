@@ -8,7 +8,7 @@ const Navigation = () => {
             <li><a href="/">About</a></li>
             <li><a href="/work">Work</a></li>
             <li><a href="/books">Books</a></li>
-            <li><a href="/topics">Topics</a></li>
+            {/* <li><a href="/topics">Topics</a></li> */}
             <li><a href="/art">Art</a></li>
         </ul>
         </div>

@@ -67,11 +67,41 @@ h1 {
 
 img {
   /*display: block;*/
+  /* max-width: 100%; */
   max-width: 100%;
   /*width: 500px;*/
   /*padding: 30px;
     margin: 30px;*/
 }
+
+.bookgrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.bookpost {
+  width: 300px;
+}
+
+.booktitle {
+  text-align: center;
+}
+
+.bookcover {
+  display: block;
+  width: 200px;
+  margin: auto;
+}
+
+.workImage {
+  /* display: block;
+  margin: auto; */
+  width: 800px;
+}
+
+/* .socialLogo {
+  max-width: 40px;
+} */
 
 /*
   #post1 {

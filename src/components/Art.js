@@ -10,26 +10,41 @@ function Work(image, name, year, artist) {
 }
 
 const artwork = [
-    new Work("theBanquet_magritte.jpg", 'The Banquet', 1958, 'Rene Magritte'),
+    new Work("theBanquet_magritte.jpg", 'The Banquet', 1958, 'René Magritte'),
     new Work("untitled_germaineKrull.jpg", 'On the Road: Eight Photographs Taken between Paris and Marseilles or between Paris and Biarritz', 1930, 'Germaine Krull'),
     new Work("MR20Chair_miesvanderRohe.jpg", 'MR 20 Armchair', 1927, 'Ludwig Mies van der Rohe'),
     new Work("morningGlories_hiroshige.jpeg", 'Morning Glories', 1843, 'Utagawa Hiroshige'),
     new Work("risingSun_Yoshio.jpg", "Rising Sun, Red Clouds", 2013, "Okada Yoshio"),
     new Work("waterLilies_monet.jpg", "Water Lilies (Agapanthus)", 1926, "Claude Monet"),
     new Work("biglinBrothers_Eakins.png", "The Biglin Brothers Turning the Stake", 1873, "Thomas Eakins"),
+    new Work("softborders.jpg", "Soft Borders", 1997, "Mark Tansey"),
+    new Work("unexpected_answer.jpg", "La Réponse imprévue [The Unexpected Answer]", 1933, "René Magritte"),
+    new Work("lebaiser.jpg", "Le Baiser [The Kiss]", 1938, "René Magritte"),
+    new Work("GlacierPointPan.jpg", "View from the handrail at Glacier Point overlook, connecting views from Ansel Adams to Carleton Watkins", 2003, "Mark Klett and Byron Wolfe, with left insert from Ansel Adams (1935) and right insert from Carleton Watkins (1861)"),
 ]
 
-
+// this works except the last one
 function shuffle(array) {
     let newArray = [];
     let arrayCopy = [...array];
-    for (let i = array.length - 1; i >= 0; i--) {
-        let j = Math.floor(Math.random() * i);
+    for (let i = arrayCopy.length - 1; i >= 0; i--) {
+        let j = Math.ceil(Math.random() * i);
         newArray.push(arrayCopy[j]);
         arrayCopy.splice(j, 1);
     }
     return newArray;
 }
+
+// function shuffle(array) {
+//     let newArray = [];
+//     let arrayCopy = [...array];
+//     for (let i = 0; i < array.length - 1; i++) {
+//         let j = Math.floor(Math.random() * i);
+//         newArray.push(arrayCopy[j]);
+//         arrayCopy.splice(j, 1);
+//     }
+//     return newArray;
+// }
 
 const shuffledArtWork = shuffle(artwork);
 
@@ -37,7 +52,7 @@ const shuffledArtWork = shuffle(artwork);
 function Piece(props) {
     return (
         <div className="post">
-            <img src={'/assets/' + props.image} alt={props.name}/>
+            <img src={'/artwork/' + props.image} alt={props.name}/>
             <p>
                 <span className="bold">{props.name}</span>
                 <br></br>
@@ -65,6 +80,7 @@ const Art = (props) => {
         return (
             <div className="artPage">
             <Navigation />
+            
             <div className="content">
                 <ArtList pieces={shuffledArtWork} />
             </div>

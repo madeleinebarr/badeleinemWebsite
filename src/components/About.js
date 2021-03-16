@@ -13,7 +13,11 @@ const About = () => {
                 </div>
                 <div className="post post2">
                     <h1>Contact me</h1>
-                    <span class="bold">Twitter:</span> <a href="https://twitter.com/badeleinem">@badeleinem</a>
+                    <span class="bold">Twitter:</span> <a href="https://twitter.com/badeleinem" target="blank">@badeleinem</a>
+                    <br></br>
+                    <span class="bold">Github:</span> <a href="https://github.com/madeleinebarr" target="blank">madeleinebarr</a>
+                    {/* <a href="https://twitter.com/badeleinem" target="blank"></a> */}
+                    {/* <img src='/social/2021Twitterlogoblue.png' alt='twitter' className="socialLogo"></img> */}
                 </div>
             </div>
         </div>
