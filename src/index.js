@@ -11,4 +11,4 @@ import './css/style.css';
 //   document.getElementById('root')
 // );
 
-render(<Router basename={process.env.PUBLIC_URL}/>, document.querySelector('#root')); 
+render(<Router />, document.querySelector('#root')); 

@@ -12,15 +12,19 @@ const Navigation = () => {
             <li><a href="/art">Art</a></li> */}
 
             <li>
-                <Link to ="/badeleinemWebsite/">About</Link>
+                <Link to ="/">About</Link>
                 </li>
 
                 <li>
-                <Link to ="/badeleinemWebsite/work">Work</Link>
+                <Link to ="/work">Work</Link>
                 </li>
 
                 <li>
-                <Link to ="/badeleinemWebsite/books">Books</Link>
+                <Link to ="/books">Books</Link>
+                </li>
+
+                <li>
+                <Link to ="/art">Art</Link>
                 </li>
 
             {/* <li><a href="/books">Books</a></li>

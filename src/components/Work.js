@@ -53,7 +53,9 @@ const Work = () => {
     return (
         <div className="workPage">
             <Navigation />
+            <div class="content">
             <ProjectList projects={projectsArray} />
+            </div>
         </div>
     );
 }
