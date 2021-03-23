@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/badeleinemWebsite/static/css/main.16692bb7.chunk.css",
-    "main.js": "/badeleinemWebsite/static/js/main.a1d89c42.chunk.js",
-    "main.js.map": "/badeleinemWebsite/static/js/main.a1d89c42.chunk.js.map",
+    "main.js": "/badeleinemWebsite/static/js/main.98fdbdbd.chunk.js",
+    "main.js.map": "/badeleinemWebsite/static/js/main.98fdbdbd.chunk.js.map",
     "runtime-main.js": "/badeleinemWebsite/static/js/runtime-main.177b7a5c.js",
     "runtime-main.js.map": "/badeleinemWebsite/static/js/runtime-main.177b7a5c.js.map",
     "static/js/2.6411ea11.chunk.js": "/badeleinemWebsite/static/js/2.6411ea11.chunk.js",
@@ -15,6 +15,6 @@
     "static/js/runtime-main.177b7a5c.js",
     "static/js/2.6411ea11.chunk.js",
     "static/css/main.16692bb7.chunk.css",
-    "static/js/main.a1d89c42.chunk.js"
+    "static/js/main.98fdbdbd.chunk.js"
   ]
 }
