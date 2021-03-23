@@ -31,7 +31,7 @@ const shuffledArtWork = shuffle(artwork);
 
 function Piece(props) {
     return (
-        <div className="post">
+        <div className="post artpost">
             <img src={'./artwork/' + props.image} alt={props.name}/>
             <p>
                 <span className="bold">{props.name}</span>
@@ -61,7 +61,7 @@ const Art = (props) => {
             <div className="artPage">
             <Navigation />
             
-            <div className="content">
+            <div className="content artcontent">
                 <ArtList pieces={shuffledArtWork} />
             </div>
             </div>

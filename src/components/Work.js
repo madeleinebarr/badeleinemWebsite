@@ -23,8 +23,8 @@ function ProjectPost(props) {
                 <br></br>
                 {props.description}
             </p>
-            <p><a href={props.hostlink} target="_blank" rel="noopener noreferrer">hosted project</a>
-                <br></br>
+            <p><span className="hiddenonmobile"><a href={props.hostlink} target="_blank" rel="noopener noreferrer">hosted project</a>
+                <br></br></span>
                 <a href={props.repolink} target="_blank" rel="noopener noreferrer">project repository</a>
             </p>
         </div>
@@ -53,7 +53,9 @@ const Work = () => {
     return (
         <div className="workPage">
             <Navigation />
+            <div className="content workcontent">
             <ProjectList projects={projectsArray} />
+            </div>
         </div>
     );
 }

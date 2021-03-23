@@ -6,10 +6,6 @@ const Navigation = () => {
         <div>
         <div className="menu">
         <ul>
-            {/* <li><a href="/badeleinemWebsite/">About</a></li>
-            <li><a href="/badeleinemWebsite/work">Work</a></li>
-            <li><a href="/books">Books</a></li>
-            <li><a href="/art">Art</a></li> */}
 
             <li>
                 <Link to ="/">About</Link>
@@ -27,8 +23,7 @@ const Navigation = () => {
                 <Link to ="/art">Art</Link>
                 </li>
 
-            {/* <li><a href="/books">Books</a></li>
-            <li><a href="/art">Art</a></li> */}
+           
         </ul>
         </div>
         <div className="left">&nbsp;

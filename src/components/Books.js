@@ -59,7 +59,9 @@ const Books = () => {
     return (
         <div className="bookPage">
         <Navigation />
+        <div className="content bookcontent">
             <BookList books={shuffledBooks} />
+            </div>
         </div>  
     );
 }

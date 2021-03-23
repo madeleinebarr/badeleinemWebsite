@@ -1,7 +1,5 @@
 body {
   font-family: Helvetica;
-  /*font-family: Nanum Myeongjo;*/
-  /*font-size: 13px;*/
 }
 
 p {
@@ -9,7 +7,6 @@ p {
 }
 
 h1 {
-  /*font-family: Nanum Myeongjo;*/
   font-weight: 300;
 }
 
@@ -23,7 +20,6 @@ h1 {
   margin-top: 30px;
   margin-right: 20px;
   text-align: right;
-  /* width: 100px; */
 }
 
 .menu ul {
@@ -34,9 +30,9 @@ h1 {
 
 .menu li a {
   display: inline-block;
-  /*color: #0864c7;*/
   color: #5158ff;
   text-decoration: none;
+  font-size: 20px;
 }
 
 .menu li a:hover {
@@ -65,13 +61,53 @@ h1 {
   margin: 30px;
 }
 
+/*about screen responsive css*/
+@media only screen and (max-width: 600px) {
+  .aboutcontent {
+    width: 350px;
+    margin-top: 0px;
+  }
+
+  .aboutpost {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .menu li a {
+    font-size: 20px;
+  }
+}
+
 img {
   /*display: block;*/
   /* max-width: 100%; */
   max-width: 100%;
+  /* height: auto; */
   /*width: 500px;*/
   /*padding: 30px;
     margin: 30px;*/
+}
+
+/*art content responsive*/
+@media only screen and (max-width: 600px) {
+  .artcontent {
+    width: 350px;
+    margin-top: 0px;
+  }
+
+  .artpost {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+  }
+
+  /*
+  .menu li a {
+    font-size: 20px;
+  } */
 }
 
 .bookgrid {
@@ -79,13 +115,8 @@ img {
   grid-template-columns: auto auto auto;
 }
 
-.workgrid {
-  display: grid;
-  grid-template-columns: auto;
-}
-
 .bookpost {
-  width: 300px;
+  width: 250px;
 }
 
 .booktitle {
@@ -98,80 +129,60 @@ img {
   margin: auto;
 }
 
+@media only screen and (max-width: 600px) {
+  .bookgrid {
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .bookcontent {
+    width: 350px;
+    margin-top: 0px;
+  }
+
+  .bookpost {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  .bookcover {
+    margin: 0;
+  }
+
+  .booktitle {
+    text-align: left;
+  }
+
+  /* .bookpost {
+    float: left;
+    width: 100px;
+  } */
+}
+
+.workcontent {
+  width: 1000px;
+}
+
 .workImage {
-  /* display: block;
-  margin: auto; */
-  /* display: block; */
   width: 800px;
 }
 
-/* .socialLogo {
-  max-width: 40px;
-} */
+.workgrid {
+  display: grid;
+  grid-template-columns: auto;
+}
 
-/*
-  #post1 {
-      background-color: yellow;
+@media only screen and (max-width: 600px) {
+  .workcontent {
+    width: 400px;
   }
 
-  #post2 {
-      background-color: pink;
-  }*/
+  .workpost {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
 
-/*
-  #content h1, #content h2, #content h3 {
-    margin: 0;
+  .hiddenonmobile {
+    display: none;
   }
-  
-  #content h2 {
-    margin-top: 2em;
-  }
-  
-  #content .byline, #content .byline a, #content .note {
-    font-size: 10px;
-    color: #aaa;
-  }
-  
-  #content p, #content ul {
-    color: #333;
-    line-height: 18px;
-  }
-  
-  #content sup.note {
-    display: inline-block;
-    margin-top: -5px;
-  }
-  
-  #content p.notop {
-    margin-top: 0;
-  }
-  
-  #content .thanks {
-    margin-top: 2em;
-    padding-top: 1em;
-    border-top: 1px solid #eee;
-    margin-bottom: 4em;
-    font-size: smaller;
-    color: #777;
-  }
-  
-  #content .thanks a {
-    color: #777;
-  }
-  
-  #content li {
-    margin-bottom: 0.7em;
-  }
-  
-  .post + .post {
-    margin-top: 50px;
-  }
-  
-  sup, sub {
-    vertical-align: baseline;
-    position: relative;
-    top: -0.4em;
-  }
-  sub { 
-    top: 0.4em; 
-  }*/
+}
