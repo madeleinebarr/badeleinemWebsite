@@ -5,7 +5,7 @@ const Navigation = () => {
         <div>
         <div className="menu">
         <ul>
-            <li><a href="/">About</a></li>
+            <li><a href="/badeleinemWebsite/">About</a></li>
             <li><a href="/work">Work</a></li>
             <li><a href="/books">Books</a></li>
             {/* <li><a href="/topics">Topics</a></li> */}
