@@ -1,5 +1,6 @@
 import React from 'react';
 import Navigation from './Navigation';
+import { shuffle } from '../helpers';
 
 
 function Work(image, name, year, artist) {
@@ -23,28 +24,7 @@ const artwork = [
     new Work("GlacierPointPan.jpg", "View from the handrail at Glacier Point overlook, connecting views from Ansel Adams to Carleton Watkins", 2003, "Mark Klett and Byron Wolfe, with left insert from Ansel Adams (1935) and right insert from Carleton Watkins (1861)"),
 ]
 
-// this works except the last one
-function shuffle(array) {
-    let newArray = [];
-    let arrayCopy = [...array];
-    for (let i = arrayCopy.length - 1; i >= 0; i--) {
-        let j = Math.ceil(Math.random() * i);
-        newArray.push(arrayCopy[j]);
-        arrayCopy.splice(j, 1);
-    }
-    return newArray;
-}
 
-// function shuffle(array) {
-//     let newArray = [];
-//     let arrayCopy = [...array];
-//     for (let i = 0; i < array.length - 1; i++) {
-//         let j = Math.floor(Math.random() * i);
-//         newArray.push(arrayCopy[j]);
-//         arrayCopy.splice(j, 1);
-//     }
-//     return newArray;
-// }
 
 const shuffledArtWork = shuffle(artwork);
 

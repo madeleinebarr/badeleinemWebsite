@@ -1,5 +1,6 @@
 import React from 'react';
 import Navigation from './Navigation';
+import { shuffle } from '../helpers';
 
 function Book(image, title, author, description) {
     this.image = image;
@@ -15,7 +16,12 @@ const booksArray = [
     new Book("threebodyproblem.jpg", "The Three-Body Problem", "Cixin Liu", "The entire trilogy will have you asking questions you never would've imagined asking. First novel in translation to win a Hugo Award."),
     new Book("homegoing.jpg", "Homegoing", "Yaa Gyasi", "Centuries of history told through interlinked stories across generations. Her characters are so alive that they come off the page."),
     new Book("memorypolice.jpg", "The Memory Police", "Yoko Ogawa", "A dystopian novel that reads like poetry and explores the nature of memory and loss. It made me look at everyday objects completely differently."),
+    new Book("birdsofamerica.jpeg", "Birds of America", "Lorrie Moore", "Contains one of my favorite short stories of all time, \"People Like That Are the Only People Here\", that ventured into the twisted heart of parenthood."),
+    new Book("lostchildrenarchive.jpeg", "Lost Children Archive", "Valeria Luiselli", "A fable-esque story about migrant children, non-migrant children, and confronting how interchangeable their situations are."),
+    new Book("manssearchformeaning.jpeg", "Man's Search for Meaning", "Viktor E. Frankl", "A prescription for living through the search for meaning, written by a Holocaust survivor."),
 ]
+
+const shuffledBooks = shuffle(booksArray);
 
 function BookPost(props) {
     return (
@@ -53,7 +59,7 @@ const Books = () => {
     return (
         <div className="bookPage">
         <Navigation />
-            <BookList books={booksArray} />
+            <BookList books={shuffledBooks} />
         </div>  
     );
 }
