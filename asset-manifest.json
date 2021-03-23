@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/badeleinemWebsite/static/css/main.16692bb7.chunk.css",
-    "main.js": "/badeleinemWebsite/static/js/main.5892298a.chunk.js",
-    "main.js.map": "/badeleinemWebsite/static/js/main.5892298a.chunk.js.map",
+    "main.js": "/badeleinemWebsite/static/js/main.0056c965.chunk.js",
+    "main.js.map": "/badeleinemWebsite/static/js/main.0056c965.chunk.js.map",
     "runtime-main.js": "/badeleinemWebsite/static/js/runtime-main.177b7a5c.js",
     "runtime-main.js.map": "/badeleinemWebsite/static/js/runtime-main.177b7a5c.js.map",
-    "static/js/2.9864a28e.chunk.js": "/badeleinemWebsite/static/js/2.9864a28e.chunk.js",
-    "static/js/2.9864a28e.chunk.js.map": "/badeleinemWebsite/static/js/2.9864a28e.chunk.js.map",
+    "static/js/2.9ed3c41b.chunk.js": "/badeleinemWebsite/static/js/2.9ed3c41b.chunk.js",
+    "static/js/2.9ed3c41b.chunk.js.map": "/badeleinemWebsite/static/js/2.9ed3c41b.chunk.js.map",
     "index.html": "/badeleinemWebsite/index.html",
     "static/css/main.16692bb7.chunk.css.map": "/badeleinemWebsite/static/css/main.16692bb7.chunk.css.map",
-    "static/js/2.9864a28e.chunk.js.LICENSE.txt": "/badeleinemWebsite/static/js/2.9864a28e.chunk.js.LICENSE.txt"
+    "static/js/2.9ed3c41b.chunk.js.LICENSE.txt": "/badeleinemWebsite/static/js/2.9ed3c41b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.177b7a5c.js",
-    "static/js/2.9864a28e.chunk.js",
+    "static/js/2.9ed3c41b.chunk.js",
     "static/css/main.16692bb7.chunk.css",
-    "static/js/main.5892298a.chunk.js"
+    "static/js/main.0056c965.chunk.js"
   ]
 }
