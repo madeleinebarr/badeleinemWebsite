@@ -19,8 +19,8 @@ const artwork = [
     new Work("waterLilies_monet.jpg", "Water Lilies (Agapanthus)", 1926, "Claude Monet"),
     new Work("biglinBrothers_Eakins.png", "The Biglin Brothers Turning the Stake", 1873, "Thomas Eakins"),
     new Work("softborders.jpg", "Soft Borders", 1997, "Mark Tansey"),
-    new Work("unexpected_answer.jpg", "La Réponse imprévue [The Unexpected Answer]", 1933, "René Magritte"),
-    new Work("lebaiser.jpg", "Le Baiser [The Kiss]", 1938, "René Magritte"),
+    new Work("unexpected_answer.jpg", "La Réponse imprévue (The Unexpected Answer)", 1933, "René Magritte"),
+    new Work("lebaiser.jpg", "Le Baiser (The Kiss)", 1938, "René Magritte"),
     new Work("GlacierPointPan.jpg", "View from the handrail at Glacier Point overlook, connecting views from Ansel Adams to Carleton Watkins", 2003, "Mark Klett and Byron Wolfe, with left insert from Ansel Adams (1935) and right insert from Carleton Watkins (1861)"),
 ]
 
@@ -32,7 +32,7 @@ const shuffledArtWork = shuffle(artwork);
 function Piece(props) {
     return (
         <div className="post">
-            <img src={'/artwork/' + props.image} alt={props.name}/>
+            <img src={'./artwork/' + props.image} alt={props.name}/>
             <p>
                 <span className="bold">{props.name}</span>
                 <br></br>

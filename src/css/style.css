@@ -23,7 +23,7 @@ h1 {
   margin-top: 30px;
   margin-right: 20px;
   text-align: right;
-  width: 150px;
+  /* width: 100px; */
 }
 
 .menu ul {
@@ -79,6 +79,11 @@ img {
   grid-template-columns: auto auto auto;
 }
 
+.workgrid {
+  display: grid;
+  grid-template-columns: auto;
+}
+
 .bookpost {
   width: 300px;
 }
@@ -96,6 +101,7 @@ img {
 .workImage {
   /* display: block;
   margin: auto; */
+  /* display: block; */
   width: 800px;
 }
 

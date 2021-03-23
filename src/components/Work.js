@@ -16,7 +16,7 @@ const projectsArray = [
 function ProjectPost(props) {
     return (
         <div className="post workpost">
-            <img src={'/projects/' + props.image} alt={props.title} className="workImage"></img>
+            <img src={'./projects/' + props.image} alt={props.title} className="workImage"></img>
 
             <p className="worktitle">
                 <span className="bold">{props.title}:</span>
@@ -53,9 +53,7 @@ const Work = () => {
     return (
         <div className="workPage">
             <Navigation />
-            <div class="content">
             <ProjectList projects={projectsArray} />
-            </div>
         </div>
     );
 }

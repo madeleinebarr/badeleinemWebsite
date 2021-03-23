@@ -26,7 +26,7 @@ const shuffledBooks = shuffle(booksArray);
 function BookPost(props) {
     return (
         <div className="post bookpost">
-            <img src={'/bookCovers/' + props.image} alt={props.title} className="bookcover"></img>
+            <img src={'./bookCovers/' + props.image} alt={props.title} className="bookcover"></img>
 
             <p className="booktitle">
                 <span className="bold">{props.title}</span>
