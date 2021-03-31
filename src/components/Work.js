@@ -11,6 +11,7 @@ function Project(image, title, description, hostlink, repolink) {
 
 const projectsArray = [
     new Project("valendar.png", "Valendar", "Calendar, goals, and mood tracker built using vanilla Javascript", "https://habit-tracker-11f85.web.app/", "https://github.com/madeleinebarr/valendar"),
+    new Project("metproject.png", "Art Project", "Discovery tool for The Metropolitan Museum of Art built using Postgresql, Express, React, Node.js, and The Met's API", "https://met-art-project.herokuapp.com/", "https://github.com/madeleinebarr/artproject"),
 ]
 
 function ProjectPost(props) {
