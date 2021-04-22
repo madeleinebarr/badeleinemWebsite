@@ -119,6 +119,10 @@ img {
   width: 250px;
 }
 
+.bookheading {
+  margin-left: 80px;
+}
+
 .booktitle {
   text-align: center;
 }
@@ -129,10 +133,18 @@ img {
   margin: auto;
 }
 
+/* .bookcontent {
+  width: 800px;
+} */
+
 @media only screen and (max-width: 1300px) {
   .bookgrid {
     display: grid;
     grid-template-columns: auto;
+  }
+
+  .bookheading {
+    margin-left: 60px;
   }
 
   .bookcontent {
