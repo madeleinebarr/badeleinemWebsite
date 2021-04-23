@@ -120,7 +120,17 @@ img {
 }
 
 .bookheading {
-  margin-left: 80px;
+  margin-left: 60px;
+  margin-bottom: 0px;
+}
+
+.allbookspost {
+  margin-left: 60px;
+  /* margin-bottom: 30px; */
+}
+
+.allbookslist {
+  margin-bottom: 30px;
 }
 
 .booktitle {
@@ -197,4 +207,12 @@ img {
   .hiddenonmobile {
     display: none;
   }
+}
+
+.favorite {
+  color: #5158ff;
+}
+
+.bookshelf {
+  margin-top: -20px;
 }
