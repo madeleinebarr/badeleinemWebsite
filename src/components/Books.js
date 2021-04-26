@@ -30,6 +30,7 @@ function AllBook(title, author, favorite) {
 }
 
 const books2021 = [
+    new AllBook("Detransition, Baby", "Torrey Peters", false),
     new AllBook("Such a Fun Age", "Kiley Reid", false),
     new AllBook("Exodus", "Deborah Feldman", false),
     new AllBook("Unorthodox", "Deborah Feldman", false),
@@ -102,16 +103,65 @@ const books2019 = [
     new AllBook("The Idiot", "Elif Batuman", false)
 ]
 
-// const books2021 = [
-//     {
-//         title: "Such a Fun Age",
-//         author: "Kiley Reid"
-//     },
-//     {
-//         title: "Exodus",
-//         author: "Deborah Feldman",
-//     },
-// ];
+const books2018 = [
+    new AllBook("The Songlines", "Bruce Chatwin", false),
+    new AllBook("The People in the Trees", "Hanya Yanagihara", false),
+    new AllBook("Little Fires Everywhere", "Celeste Ng", false),
+    new AllBook("This Will Be My Undoing", "Morgan Jerkins", false),
+    new AllBook("Back Talk: Stories", "Danielle Lazarin", false),
+    new AllBook("The Accusation: Forbidden Stories from Inside North Korea", "Bandi", false),
+    new AllBook("Nothing to Envy", "Barbara Demick", true),
+    new AllBook("The Orphan Master's Son", "Adam Johnson", false),
+    new AllBook("Just Mercy", "Bryan Stevenson", false),
+    new AllBook("I, Claudius", "Robert Graves", false),
+    new AllBook("Companions", "Christina Hesselholdt", false),
+    new AllBook("Two Serious Ladies", "Jane Bowles", false),
+    new AllBook("Black Swans", "Eve Babitz", false),
+    new AllBook("Killers of the Flower Moon", "David Grann", false),
+    new AllBook("Kudos", "Rachel Cusk", true),
+    new AllBook("Less", "Andrew Sean Greer", true),
+    new AllBook("Dune", "Frank Herbert", false),
+    new AllBook("The Woman in the Window", "AJ Finn", false),
+    new AllBook("The Haunting of Hill House", "Shirley Jackson", true),
+    new AllBook("The Oddysey", "Homer, translated by Simon Armitage", true),
+    new AllBook("Sapiens", "Nuval Noah Harrari", false),
+    new AllBook("Bluets", "Maggie Nelson", false),
+    new AllBook("Flights", "Olga Tokarczuk", true)
+]
+
+const books2018Ordered = books2018.reverse();
+
+const books2017 = [
+    new AllBook("The Martian", "Andy Weir", false),
+    new AllBook("Bad Feminist", "Roxane Gay", false),
+    new AllBook("The Thing Around Your Neck", "Chimamanda Ngozi Adichie", false),
+    new AllBook("Franny & Zoey", "JD Salinger", false),
+    new AllBook("Strangers in Their Own Land", "Arlie Russell Hochschild", false),
+    new AllBook("The Bell Jar", "Sylvia Plath", false),
+    new AllBook("The Handmaid's Tale", "Margaret Atwood", false),
+    new AllBook("All the Single Ladies", "Rebecca Traister", false),
+    new AllBook("The Blind Assassin", "Margaret Atwood", false),
+    new AllBook("After Dark", "Haruki Murakami", true),
+    new AllBook("Underground Airlines", "Ben H Winters", false),
+    new AllBook("Netherland", "Joseph O'Neill", false),
+    new AllBook("Life Is Meals", "James Salter", false),
+    new AllBook("All the Pretty Horses", "Cormac McCarthy", false),
+    new AllBook("The Girl on the Train", "Paula Hawkins", false),
+    new AllBook("Between the World & Me", "Ta-Nehisi Coates", false),
+    new AllBook("Outline", "Rachel Cusk", true),
+    new AllBook("Transit", "Rachel Cusk", true),
+    new AllBook("Dream Hoarders", "Richard Reeves", false),
+    new AllBook("Black Edge", "Sheelah Kolhatkar", false),
+    new AllBook("The Sum of Small Things", "Elizabeth Currid-Halkett", false),
+    new AllBook("American War", "Omar El Akkad", false),
+    new AllBook("The Underground Railroad", "Colson Whitehead", false),
+    new AllBook("Her Body and Other Parties", "Carmen Maria Machado", true),
+    new AllBook("The Girls", "Emma Cline", false),
+    new AllBook("Sweetbitter", "Stephanie Danler", false),
+    new AllBook("Americanah", "Chimamanda Ngozi Adichie", true),
+    new AllBook("The Oddysey", "Homer, translated by Robert Fagles", true),
+    new AllBook("Seven Years in Tibet", "Heinrich Harrer", false)
+]
 
 function BookPost(props) {
     return (
@@ -175,8 +225,6 @@ const Books = () => {
         <p className="bookheading favorite bold">favorites are highlighted</p>
         <h1 className="bookheading">2021</h1>
 
-        {/* <p className="allbookslist"><i>Such a Fun Age</i> by Kiley Reid</p>
-        <p className="allbookslist">Exodus by Deborah Feldman</p> */}
         <AllBooksList allbooks={books2021} />
 
         <h1 className="bookheading">2020</h1>
@@ -186,6 +234,14 @@ const Books = () => {
         <h1 className="bookheading">2019</h1>
 
         <AllBooksList allbooks={books2019} />
+
+        <h1 className="bookheading">2018</h1>
+
+        <AllBooksList allbooks={books2018Ordered} />
+
+        <h1 className="bookheading">2017</h1>
+
+        <AllBooksList allbooks={books2017} />
         
         </div>
 

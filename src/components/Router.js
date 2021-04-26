@@ -5,6 +5,7 @@ import Work from './Work';
 import Books from './Books';
 import Art from './Art';
 import NotFound from './NotFound';
+import TodayILearned from './TodayILearned';
 
 const Router = () => (
     <HashRouter basename="/">
@@ -14,6 +15,7 @@ const Router = () => (
             <Route path="/books" component={Books} />
             {/* <Route path="/topics" component={Topics} /> */}
             <Route path="/art" component={Art} />
+            <Route path="/til" component={TodayILearned} />
             <Route component={NotFound} />
         </Switch>
     </HashRouter>

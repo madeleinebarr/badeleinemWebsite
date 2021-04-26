@@ -23,6 +23,10 @@ const Navigation = () => {
                 <Link to ="/art">Art</Link>
                 </li>
 
+                <li>
+                <Link to ="/til">TIL</Link>
+                </li>
+
            
         </ul>
         </div>

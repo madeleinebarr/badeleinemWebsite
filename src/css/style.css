@@ -175,6 +175,10 @@ img {
     text-align: left;
   }
 
+  /* .dateheader {
+    width: 20px;
+  } */
+
   /* .bookpost {
     float: left;
     width: 100px;
@@ -215,4 +219,59 @@ img {
 
 .bookshelf {
   margin-top: -20px;
+}
+
+.tiltextdescription {
+  margin-left: 60px;
+}
+
+.tiltablecontainer {
+  margin-left: 60px;
+  margin-top: 30px;
+}
+
+.tiltablecontainer table,
+th,
+td {
+  border: 0.5px solid lightgray;
+  border-collapse: collapse;
+}
+
+.tiltablecontainer table {
+  width: 800px;
+}
+
+.dateheader {
+  width: 100px;
+}
+
+.tiltablecontainer th,
+td {
+  padding: 15px;
+}
+
+.tiltablecontainer td {
+  font-weight: 100;
+}
+
+.tiltablecontainer th {
+  text-align: left;
+  font-weight: 500;
+}
+
+table .tabledate {
+  /* background: #fff952; */
+  background: #fff0e1;
+}
+
+@media only screen and (max-width: 1300px) {
+  .tiltablecontainer table {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .tiltablecontainer table {
+    width: 400px;
+  }
 }
