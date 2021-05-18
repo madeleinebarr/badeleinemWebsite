@@ -13,7 +13,7 @@ const lessonArray = [
     new Lesson("April 23, 2021", "Drawing out the component hierarchy on paper for a React application makes building it much easier."),
     new Lesson("April 22, 2021", "For recording purposes, the microphone on traditional \"wire\" headphones is superior to the microphone on AirPods."),
     new Lesson("April 21, 2021", "Seriously, go to the dentist every 6 months."),
-    new Lesson("April 20, 2021", "Trees may improve immuntiy thanks to certain aromatic compounds they release.")
+    new Lesson("April 20, 2021", "Trees may improve immunity thanks to certain aromatic compounds they release.")
 ];
 
 function LessonRow(props) {
