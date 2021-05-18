@@ -30,6 +30,8 @@ function AllBook(title, author, favorite) {
 }
 
 const books2021 = [
+    new AllBook("The Hierarchies", "Ros Anderson", false),
+    new AllBook("Klara and the Sun", "Kazuo Ishiguro", true),
     new AllBook("Detransition, Baby", "Torrey Peters", false),
     new AllBook("Such a Fun Age", "Kiley Reid", false),
     new AllBook("Exodus", "Deborah Feldman", false),
